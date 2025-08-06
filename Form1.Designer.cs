@@ -39,11 +39,11 @@
             buttonTwo = new Button();
             buttonThree = new Button();
             buttonDivide = new Button();
-            this.buttonMultiply = new Button();
-            this.buttonPlus = new Button();
-            this.buttonMinus = new Button();
-            this.buttonEqual = new Button();
-            this.buttonClear = new Button();
+            buttonMultiply = new Button();
+            buttonPlus = new Button();
+            buttonMinus = new Button();
+            buttonEqual = new Button();
+            buttonClear = new Button();
             buttonZero = new Button();
             SuspendLayout();
             // 
@@ -62,6 +62,7 @@
             buttonSeven.TabIndex = 1;
             buttonSeven.Text = "7";
             buttonSeven.UseVisualStyleBackColor = true;
+            buttonSeven.Click += button_Click;
             // 
             // buttonEight
             // 
@@ -71,6 +72,7 @@
             buttonEight.TabIndex = 2;
             buttonEight.Text = "8";
             buttonEight.UseVisualStyleBackColor = true;
+            buttonEight.Click += button_Click;
             // 
             // buttonNine
             // 
@@ -80,6 +82,7 @@
             buttonNine.TabIndex = 3;
             buttonNine.Text = "9";
             buttonNine.UseVisualStyleBackColor = true;
+            buttonNine.Click += button_Click;
             // 
             // buttonFour
             // 
@@ -89,6 +92,7 @@
             buttonFour.TabIndex = 4;
             buttonFour.Text = "4";
             buttonFour.UseVisualStyleBackColor = true;
+            buttonFour.Click += button_Click;
             // 
             // buttonFive
             // 
@@ -98,6 +102,7 @@
             buttonFive.TabIndex = 5;
             buttonFive.Text = "5";
             buttonFive.UseVisualStyleBackColor = true;
+            buttonFive.Click += button_Click;
             // 
             // buttonSix
             // 
@@ -107,6 +112,7 @@
             buttonSix.TabIndex = 6;
             buttonSix.Text = "6";
             buttonSix.UseVisualStyleBackColor = true;
+            buttonSix.Click += button_Click;
             // 
             // buttonOne
             // 
@@ -116,6 +122,7 @@
             buttonOne.TabIndex = 7;
             buttonOne.Text = "1";
             buttonOne.UseVisualStyleBackColor = true;
+            buttonOne.Click += button_Click;
             // 
             // buttonTwo
             // 
@@ -125,6 +132,7 @@
             buttonTwo.TabIndex = 8;
             buttonTwo.Text = "2";
             buttonTwo.UseVisualStyleBackColor = true;
+            buttonTwo.Click += button_Click;
             // 
             // buttonThree
             // 
@@ -134,6 +142,7 @@
             buttonThree.TabIndex = 9;
             buttonThree.Text = "3";
             buttonThree.UseVisualStyleBackColor = true;
+            buttonThree.Click += button_Click;
             // 
             // buttonDivide
             // 
@@ -143,51 +152,57 @@
             buttonDivide.TabIndex = 10;
             buttonDivide.Text = "/";
             buttonDivide.UseVisualStyleBackColor = true;
+            buttonDivide.Click += buttonDivide_Click;
             // 
             // buttonMultiply
             // 
-            this.buttonMultiply.Location = new Point(458, 167);
-            this.buttonMultiply.Name = "buttonMultiply";
-            this.buttonMultiply.Size = new Size(75, 23);
-            this.buttonMultiply.TabIndex = 11;
-            this.buttonMultiply.Text = "*";
-            this.buttonMultiply.UseVisualStyleBackColor = true;
+            buttonMultiply.Location = new Point(458, 167);
+            buttonMultiply.Name = "buttonMultiply";
+            buttonMultiply.Size = new Size(75, 23);
+            buttonMultiply.TabIndex = 11;
+            buttonMultiply.Text = "*";
+            buttonMultiply.UseVisualStyleBackColor = true;
+            buttonMultiply.Click += buttonMultiply_Click;
             // 
             // buttonPlus
             // 
-            this.buttonPlus.Location = new Point(458, 225);
-            this.buttonPlus.Name = "buttonPlus";
-            this.buttonPlus.Size = new Size(75, 23);
-            this.buttonPlus.TabIndex = 12;
-            this.buttonPlus.Text = "+";
-            this.buttonPlus.UseVisualStyleBackColor = true;
+            buttonPlus.Location = new Point(458, 225);
+            buttonPlus.Name = "buttonPlus";
+            buttonPlus.Size = new Size(75, 23);
+            buttonPlus.TabIndex = 12;
+            buttonPlus.Text = "+";
+            buttonPlus.UseVisualStyleBackColor = true;
+            buttonPlus.Click += buttonPlus_Click;
             // 
             // buttonMinus
             // 
-            this.buttonMinus.Location = new Point(458, 196);
-            this.buttonMinus.Name = "buttonMinus";
-            this.buttonMinus.Size = new Size(75, 23);
-            this.buttonMinus.TabIndex = 14;
-            this.buttonMinus.Text = "-";
-            this.buttonMinus.UseVisualStyleBackColor = true;
+            buttonMinus.Location = new Point(458, 196);
+            buttonMinus.Name = "buttonMinus";
+            buttonMinus.Size = new Size(75, 23);
+            buttonMinus.TabIndex = 14;
+            buttonMinus.Text = "-";
+            buttonMinus.UseVisualStyleBackColor = true;
+            buttonMinus.Click += buttonMinus_Click;
             // 
             // buttonEqual
             // 
-            this.buttonEqual.Location = new Point(377, 225);
-            this.buttonEqual.Name = "buttonEqual";
-            this.buttonEqual.Size = new Size(75, 23);
-            this.buttonEqual.TabIndex = 15;
-            this.buttonEqual.Text = "=";
-            this.buttonEqual.UseVisualStyleBackColor = true;
+            buttonEqual.Location = new Point(377, 225);
+            buttonEqual.Name = "buttonEqual";
+            buttonEqual.Size = new Size(75, 23);
+            buttonEqual.TabIndex = 15;
+            buttonEqual.Text = "=";
+            buttonEqual.UseVisualStyleBackColor = true;
+            buttonEqual.Click += buttonEqual_Click;
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new Point(193, 225);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new Size(75, 23);
-            this.buttonClear.TabIndex = 16;
-            this.buttonClear.Text = "C";
-            this.buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.Location = new Point(193, 225);
+            buttonClear.Name = "buttonClear";
+            buttonClear.Size = new Size(75, 23);
+            buttonClear.TabIndex = 16;
+            buttonClear.Text = "C";
+            buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.Click += buttonClear_Click;
             // 
             // buttonZero
             // 
@@ -197,6 +212,7 @@
             buttonZero.TabIndex = 17;
             buttonZero.Text = "0";
             buttonZero.UseVisualStyleBackColor = true;
+            buttonZero.Click += button_Click;
             // 
             // Form1
             // 
@@ -204,11 +220,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(buttonZero);
-            Controls.Add(this.buttonClear);
-            Controls.Add(this.buttonEqual);
-            Controls.Add(this.buttonMinus);
-            Controls.Add(this.buttonPlus);
-            Controls.Add(this.buttonMultiply);
+            Controls.Add(buttonClear);
+            Controls.Add(buttonEqual);
+            Controls.Add(buttonMinus);
+            Controls.Add(buttonPlus);
+            Controls.Add(buttonMultiply);
             Controls.Add(buttonDivide);
             Controls.Add(buttonThree);
             Controls.Add(buttonTwo);
@@ -222,6 +238,7 @@
             Controls.Add(textBox);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
